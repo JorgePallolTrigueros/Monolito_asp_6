@@ -1,0 +1,16 @@
+﻿@model COSUMIR_API_TEST.Models.ErrorViewModel
+
+<div class="text-danger">
+    <h1 class="display-4">Error.</h1>
+    <p>An error occurred while processing your request.</p>
+    @if (Model.ShowRequestId)
+    {
+        <p>
+            <strong>Request ID:</strong> <code>@Model.RequestId</code>
+        </p>
+    }
+    <p>
+        <strong>Stack Trace:</strong>
+        <pre>@Model.StackTrace</pre>
+    </p>
+</div>
